@@ -14,6 +14,11 @@ This repository is a **starter template** for practicing:
 > "chore: remove sample conflict markers"`. See Walkthrough Step 2 for full
 > guidance.
 
+
+## API Endpoints
+The API provides RESTful endpoints for user management, system status,
+and health monitoring at /api/users, /api/status, and /api/health.
+
 ## Quick Start
 
 ```bash
@@ -51,3 +56,4 @@ To intentionally create a merge conflict, edit the same lines in one of:
 npm test
 npm run lint
 ```
+
