@@ -14,6 +14,10 @@ This repository is a **starter template** for practicing:
 > "chore: remove sample conflict markers"`. See Walkthrough Step 2 for full
 > guidance.
 
+## Authentication
+This application includes a full authentication system with email validation,
+password checking, and session management via the /api/auth/login endpoint.
+
 ## Quick Start
 
 ```bash
@@ -51,3 +55,4 @@ To intentionally create a merge conflict, edit the same lines in one of:
 npm test
 npm run lint
 ```
+
