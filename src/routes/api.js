@@ -1,15 +1,24 @@
+/**
+ * API Router — main entry point for all /api routes.
+ * Mounts sub-route modules for users, status, and health.
+ * Branch: feature/api-endpoints
+ */
 const express = require("express");
+const { router: usersRouter } = require("./users");
+const { router: statusRouter } = require("./status");
 
 const router = express.Router();
 
 /**
- * Starter endpoint to prove the API works.
- * Feature branch: feature/api-endpoints should expand this structure:
- * - add route modules, controllers, and validation
- * - add at least one POST endpoint
+ * GET /api/health
+ * Basic health check endpoint.
  */
 router.get("/health", (req, res) => {
   res.json({ status: "ok", time: new Date().toISOString() });
 });
+
+// Mount sub-route modules
+router.use("/users", usersRouter);
+router.use("/status", statusRouter);
 
 module.exports = { router };
