@@ -72,4 +72,9 @@ function authenticate(email, password) {
   return { success: true, user: safeUser };
 }
 
+// TODO: In production, replace in-memory store with database queries
+// and use bcrypt.compare() for password verification.
+
 module.exports = { validateEmail, validatePassword, authenticate };
+
+
