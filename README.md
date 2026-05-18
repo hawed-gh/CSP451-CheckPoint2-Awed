@@ -18,6 +18,10 @@ This repository is a **starter template** for practicing:
 This application includes a full authentication system with email validation,
 password checking, and session management via the /api/auth/login endpoint.
 
+## API Endpoints
+The API provides RESTful endpoints for user management, system status,
+and health monitoring at /api/users, /api/status, and /api/health.
+
 ## Quick Start
 
 ```bash
